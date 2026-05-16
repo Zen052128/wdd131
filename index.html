@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="decription" content="WDD 131 - Dynamic Web Fundamentals, Kent Zeniff Depaloma, web development, JavaSript, training, HTML, CSS, learning, my own webpage">
+    <meta name="author" content="Kent Zeniff Depaloma">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <span id="course-title">
+            WDD 131: Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures"
+                target="_blank">
+                Scripture
+            </a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Kent Zeniff Depaloma</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <div class="text-content">
+                    <p>
+                        Hello! My name is Kent Zeniff, but you can just call me Kent. I am currently studying web
+                        development and learning HTML, CSS, and JavaScript.
+                        I enjoy creating websites, improving my coding skills and learn new and cool things about web development and coding in general!
+                    </p>
+
+                    <h3>Philippines</h3>
+
+                    <div class="country-section">
+
+                        <figure>
+                            <img src="images/philippine-flag.jpg" alt="Country Flag">
+                            <figcaption>Official Flag of the Philippines</figcaption>
+                        </figure>
+
+                        <p>
+                            The Philippines is a vibrant Southeast Asian archipelago comprising over 7,600 islands. Known for its pristine beaches, rich biodiversity, and deeply hospitable culture, it is home to over 114 million people who bridge a unique blend of Eastern and Western traditions.
+                        </p>
+
+                    </div>
+                </div>
+
+                <img
+                    class="profile-img"
+                    src="images/me.jpg"
+                    alt="Profile Picture"
+                >
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Kent Zeniff Depaloma | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>

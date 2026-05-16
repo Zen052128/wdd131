@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background-color: #124b78;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #124b78;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+/* CARD */
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.card h2 {
+    background-color: #124b78;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ABOUT SECTION */
+
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    line-height: 1.8;
+}
+
+.profile-img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.country-section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.country-section img {
+    width: 140px;
+    border: 1px solid #ccc;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* RESOURCE LIST */
+
+.card ul {
+    padding: 2rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: blue;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #124b78;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    margin-top: 0.5rem;
+    color: yellow;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        grid-column: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-section {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+}
