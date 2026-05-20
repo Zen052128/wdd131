@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+        gap: 3rem;
+        margin-right: 1rem;
+    }
+
+    nav a:hover {
+        background-color: transparent;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
