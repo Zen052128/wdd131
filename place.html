@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="author" content="Kent Zeniff Depaloma">
+    <meta name="description" content="This webpage is dedicated for featuring the good views that Philippine country have.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Philippines</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source media="(min-width: 768px)"
+                srcset="images/philippines-eagle-large.webp">
+            <img src="images/philippines-eagle-small.webp"
+                alt="A picture of Philippine Eagle"
+                class="hero-image">
+        </picture>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><strong>Capital:</strong> Manila</p>
+            <p><strong>Population:</strong> 115 Million</p>
+            <p><strong>Area:</strong> 300,000 km²</p>
+            <p><strong>Language:</strong> Filipino, English</p>
+            <p><strong>Currency:</strong> Philippine Peso</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather-icon.svg"
+                alt="weather icon"
+                class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Philippines | Kent Zeniff Depaloma
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
