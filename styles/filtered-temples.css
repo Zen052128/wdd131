@@ -116,7 +116,7 @@ footer p {
 
 #gallery p {
   font-size: 14px;
-  color: #222222;
+  color: #4a3e3d; 
   margin: 4px 0;
   font-weight: 400;
 }
@@ -124,10 +124,6 @@ footer p {
 #gallery p::first-letter, 
 #gallery p strong {
   font-weight: bold;
-}
-
-#gallery p {
-  color: #4a3e3d; 
 }
 
 #gallery img {
