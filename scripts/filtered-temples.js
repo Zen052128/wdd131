@@ -129,14 +129,17 @@ function templeImage(list) {
 
 templeImage(temples);
 
+const pageTitle = document.querySelector("#page-title");
+
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
-    templeImage(temples);
+    pageTitle.textContent = "Home";
+    templeImage(temples)
 });
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-
+    pageTitle.textContent = "Old";
     const oldTemples = temples.filter(temple =>
         parseInt(temple.dedicated) < 1900
     );
@@ -146,7 +149,7 @@ oldLink.addEventListener("click", () => {
 
 const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
-
+    pageTitle.textContent = "New";
     const newTemples = temples.filter(temple =>
         parseInt(temple.dedicated) > 2000
     );
@@ -156,7 +159,7 @@ newLink.addEventListener("click", () => {
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
-
+    pageTitle.textContent = "Large";
     const largeTemples = temples.filter(temple =>
         temple.area > 90000
     );
@@ -166,10 +169,11 @@ largeLink.addEventListener("click", () => {
 
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
-
+    pageTitle.textContent = "Small";
     const smallTemples = temples.filter(temple =>
         temple.area < 10000
     );
 
     templeImage(smallTemples);
 });
+
