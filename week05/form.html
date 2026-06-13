@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Form</title>
+    <meta name="author" content="Kent Zeniff Depaloma">
+    <meta name="description" content="A webpage dediacted in making a form as instructed in the instructions of week 05 module in WDD 131 class.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="product-name" class="section product-name">Product Name<select id="product-name" name="product-name" required>
+                    <option disabled selected>Select a Product</option>
+                </select></label>
+                
+
+                <div class="section">Overall Rating</div>
+                <div class="stars">
+                    <label for="onestar">☆<input type="radio" id="onestar" name="rating" value="1" required></label>
+                    
+                    <label for="twostar">☆☆<input type="radio" id="twostar" name="rating" value="2" required></label>
+                    
+                    <label for="threestar">☆☆☆<input type="radio" id="threestar" name="rating" value="3" required></label>
+                    
+                    <label for="fourstar">☆☆☆☆<input type="radio" id="fourstar" name="rating" value="4" required></label>
+                    
+                    <label for="fivestar">☆☆☆☆☆<input type="radio" id="fivestar" name="rating" value="5" required></label>
+                    
+                </div>
+
+                <label for="date" class="section installation">Date of Installation<input type="date" id="date" name="date" required></label>
+                
+
+                <div class="section">Which features did you find useful in the product?<br><em>(Check all that apply)</em></div>
+                <div class="features">
+                    <label for="durability"><input id="durability" type="checkbox" name="features">Durability</label>
+                    <label for="easeofuse"><input id="easeofuse" type="checkbox" name="features">Ease of Use</label>
+                    <label for="performance"><input id="performance" type="checkbox" name="features">Performance</label>
+                    <label for="design"><input id="design" type="checkbox" name="features">Design</label>
+                </div>
+
+                <label for="review" class="section review">Written Review <span id="optional">(Optional)</span></label>
+                <textarea input="text" name="review" id="review"></textarea>
+                
+
+                <label for="name" class="section">Your Name <span id="optional">(Optional)</span></label>
+                <input type="text" name="name" id="name">
+
+                <input type="submit" value="Post Review" class="button">
+            </fieldset>
+            
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Kent Zeniff Depaloma | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

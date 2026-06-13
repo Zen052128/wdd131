@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #122b78;
+    --secondary-color: rgb(180, 190, 241);
+    --text-color: #F5F5F5;
+    --max-width: 1200px;
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    padding: .8rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+fieldset {
+    padding: 0 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: color-mix(in srgb, var(--secondary-color) 40%, transparent);
+}
+
+.section {
+    display: block;
+    padding-top: 1rem;
+}
+
+.features label {
+    display: block;
+    padding-top: 0.5rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+}
+
+.stars label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name select {
+    width: 100%;
+    margin-top: 2px;
+    padding: .4rem;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.installation {
+    display: flex;
+    flex-direction: column;
+}
+
+.installation input {
+    width: 100%;
+    margin-top: 2px;
+    padding: .4rem;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+
+#review {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-top: 2px;
+}
+
+#name {
+    width: 100%;
+    min-height: 20px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-top: 2px;
+}
+
+label span {
+    color: navy;
+    font-size: 0.8rem;
+}
+
+.button { 
+    width: 100%;
+    margin-top: 20px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: white;
+}
+
