@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #080812;
+    --gold: #d4af37;
+    --card: #14141f;
+    --text: #f1f1f1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+h1,
+h2,
+nav {
+    font-family: 'Cinzel', serif;
+}
+
+#menu {
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1rem;
+
+    z-index: 1000;
+
+    transition: .3s;
+}
+
+#menu.scrolled {
+    background-color: rgba(8, 8, 18, .95);
+    backdrop-filter: blur(10px);
+}
+
+#menu a {
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 1.1rem;
+}
+
+#hero-container {
+    position: relative;
+
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+#hero-container picture,
+#hero-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-container img {
+    object-fit: cover;
+}
+
+#hero-container::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.7)
+        );
+}
+
+#hero-container h1 {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    color: var(--gold);
+
+    font-size: clamp(2.5rem, 8vw, 7rem);
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.5);
+
+    z-index: 2;
+}
+
+#timeline {
+    max-width: 1200px;
+
+    margin: 4rem auto;
+
+    padding: 1rem;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+#timeline div {
+    background: var(--card);
+
+    padding: 1.5rem;
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 10px;
+}
+
+#timeline h2 {
+    color: var(--gold);
+
+    margin-bottom: .5rem;
+}
+
+footer {
+    text-align: center;
+
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+
+    #menu {
+        gap: 1rem;
+    }
+
+    #menu a {
+        font-size: .9rem;
+    }
+
+}
+
+.character-header {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.character-header h1 {
+    color: var(--gold);
+}
+
+.filters {
+    margin-top: 1rem;
+}
+
+.filters button {
+    padding: .8rem 1.2rem;
+    margin: .3rem;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--gold);
+    color: black;
+
+    border-radius: 5px;
+}
+
+#character-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 1rem;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+.character-card {
+    background-color: var(--card);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.character-card h2 {
+    color: var(--gold);
+
+    padding: .5rem 1rem;
+}
+
+.character-card p {
+    padding: 0 1rem 1rem;
+}
+
+.anime-hero {
+    max-width: 1000px;
+
+    margin: 8rem auto 3rem;
+
+    text-align: center;
+
+    padding: 1rem;
+}
+
+.anime-hero h1 {
+    color: var(--gold);
+
+    margin-bottom: 1rem;
+}
+
+.trailer-section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 1rem;
+}
+
+.trailer-section h2 {
+    color: var(--gold);
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+.anime-info {
+    max-width: 1200px;
+
+    margin: 4rem auto;
+
+    padding: 1rem;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+.anime-info article {
+    background: var(--card);
+
+    padding: 1.5rem;
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 10px;
+}
+
+.anime-info h2 {
+    color: var(--gold);
+
+    margin-bottom: .5rem;
+}
+
+.novel-section {
+    max-width: 1000px;
+
+    margin: 4rem auto;
+
+    padding: 1rem;
+}
+
+.novel-section h2 {
+    color: var(--gold);
+
+    margin-bottom: 1rem;
+}
+
+.novel-section ul {
+    margin-top: 1rem;
+
+    margin-left: 1.5rem;
+}
